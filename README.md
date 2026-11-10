@@ -26,6 +26,7 @@ Um breve tutorial para os integrantes do laboratório que colocarão seu materia
 
 ```bash
 git clone https://github.com/lbc-npo/Nivelamento-LBC.git
+cd Nivelamento-LBC/
 ``` 
 
 🔑 Permissões de colaboração: Para conseguir enviar alterações direto para o repositório, você precisa ser adicionado como colaborador. Sem isso, você consegue clonar e ver, mas não dar push. (Todos os membros que ministrarão as aulas já foram adicionados como colaboradores)
