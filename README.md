@@ -20,5 +20,35 @@ As aulas ocorrem semanalmente, preferencialmente às **segundas-feiras**, sendo 
 | 14/12/26 | Expressão Diferencial em R | [Kauê Sant'ana](https://github.com/) | *Em andamento* |
 | 21/12/26 | Análise de Microbioma | [Diego Pereira](https://github.com/armsdidi) | *Em andamento* |
 
+## Como adicionar um novo material ao repositório
+
+Um breve tutorial para os integrantes do laboratório que colocarão seu material nesse repositório. O primeiro passo é clonar o repositório para o seu computador. Para isso, abra o terminal e execute:
+
+```bash
+git clone https://github.com/lbc-npo/Nivelamento-LBC.git
+``` 
+
+🔑 Permissões de colaboração: Para conseguir enviar alterações direto para o repositório, você precisa ser adicionado como colaborador. Sem isso, você consegue clonar e ver, mas não dar push. (Todos os membros que ministrarão as aulas já foram adicionados como colaboradores)
+
+Depois de clonar, o fluxo saudável é trabalhar em uma branch separada, não direto na main:
+
+```bash
+git switch -c first-lesson   # cria e entra numa branch nova
+
+mkdir 1_linux_conda          # cria uma pasta para colocar sua aula
+cd 1_linux_conda             # entra na sua pasta
+# aqui você adiciona o material da sua aula (arquivos .md, .html, ...)
+
+# agora é só adicionar suas alterações ao git
+git add .
+git commit -m "add first lesson"
+git push -u origin first-lesson   # sobe a sua branch pro GitHub
+```
+Obs: first-lesson, 1_linux_conda são apenas exemplos de nome de branch e nome de pasta, adapte a sua aula
+
+🔀 E aí, como junta com a main?
+
+Depois de subir a sua branch, você consegue abrir um Pull Request (PR) no repositório no GitHub. O PR é justamente a proposta de mesclar sua linha do tempo na main (aqui outras pessoas conseguem revisar, comentar e, se estiver tudo certo, aprovar o merge). Depois de aprovado, pronto, sua aula já está no repositório do nivelamente 🎉
+
 ---
 *Laboratório de Biologia Computacional (LBC)*
