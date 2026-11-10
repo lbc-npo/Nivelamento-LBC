@@ -36,8 +36,7 @@ Depois de clonar, o fluxo saudável é trabalhar em uma branch separada, não di
 git switch -c first-lesson   # cria e entra numa branch nova
 
 mkdir 1_linux_conda          # cria uma pasta para colocar sua aula
-cd 1_linux_conda             # entra na sua pasta
-# aqui você adiciona o material da sua aula (arquivos .md, .html, ...)
+# dentro dessa pasta você adiciona o material da sua aula (arquivos .md, .html, ...)
 
 # agora é só adicionar suas alterações ao git
 git add .
